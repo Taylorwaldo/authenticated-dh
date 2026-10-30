@@ -1,0 +1,5 @@
+# Versions used to develop and test this project.
+# cryptography: Ed25519 identity signatures
+# pycryptodome: prime generation (getPrime) and primality validation (isPrime)
+cryptography==50.0.1
+pycryptodome==4.2.0

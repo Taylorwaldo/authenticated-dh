@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Editors (keep the shared VS Code settings)
+.vscode/*
+!.vscode/settings.json
+.idea/
