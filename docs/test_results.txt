@@ -1,0 +1,99 @@
+test_corrupt_signature_each_message (tests.test_exchange.TestAuthentication.test_corrupt_signature_each_message) ... ok
+test_eve_resigns_unmodified_finish (tests.test_exchange.TestAuthentication.test_eve_resigns_unmodified_finish) ... ok
+test_modify_A_without_resigning (tests.test_exchange.TestAuthentication.test_modify_A_without_resigning) ... ok
+test_modify_B_19_to_17 (tests.test_exchange.TestAuthentication.test_modify_B_19_to_17) ... ok
+test_modify_B_without_resigning (tests.test_exchange.TestAuthentication.test_modify_B_without_resigning) ... ok
+test_modify_identity_labels (tests.test_exchange.TestAuthentication.test_modify_identity_labels) ... ok
+test_modify_p_or_g (tests.test_exchange.TestAuthentication.test_modify_p_or_g) ... ok
+test_sign_as_alice_using_eves_key (tests.test_exchange.TestAuthentication.test_sign_as_alice_using_eves_key) ... ok
+test_trusted_setup_cannot_be_replaced (tests.test_exchange.TestAuthentication.test_trusted_setup_cannot_be_replaced) ... ok
+test_unauthenticated_mitm_succeeds (tests.test_exchange.TestAuthentication.test_unauthenticated_mitm_succeeds) ... ok
+test_untrusted_identity_has_no_key (tests.test_exchange.TestAuthentication.test_untrusted_identity_has_no_key) ... ok
+test_valid_messages (tests.test_exchange.TestAuthentication.test_valid_messages) ... ok
+test_wrong_trusted_key (tests.test_exchange.TestAuthentication.test_wrong_trusted_key)
+Bob trusts the wrong key for Alice, so her genuine signature fails. ... ok
+test_fixed_p23_example (tests.test_exchange.TestKeyAgreement.test_fixed_p23_example) ... ok
+test_normal_run_rejects_p23 (tests.test_exchange.TestKeyAgreement.test_normal_run_rejects_p23)
+p = 23 is only allowed through the explicit fixture path. ... ok
+test_private_values_never_on_the_wire (tests.test_exchange.TestKeyAgreement.test_private_values_never_on_the_wire) ... ok
+test_several_generated_exchanges_each_size (tests.test_exchange.TestKeyAgreement.test_several_generated_exchanges_each_size) ... ok
+test_bob_does_not_complete_before_finish (tests.test_exchange.TestSessionState.test_bob_does_not_complete_before_finish) ... ok
+test_composite_modulus_in_signed_init_rejected (tests.test_exchange.TestSessionState.test_composite_modulus_in_signed_init_rejected)
+Even a validly signed init with composite p is rejected by Bob. ... ok
+test_duplicate_finish_after_completion (tests.test_exchange.TestSessionState.test_duplicate_finish_after_completion) ... ok
+test_duplicate_json_key_attack (tests.test_exchange.TestSessionState.test_duplicate_json_key_attack) ... ok
+test_duplicate_response_after_completion (tests.test_exchange.TestSessionState.test_duplicate_response_after_completion) ... ok
+test_fresh_nonces_each_exchange (tests.test_exchange.TestSessionState.test_fresh_nonces_each_exchange) ... ok
+test_malformed_and_oversized_messages (tests.test_exchange.TestSessionState.test_malformed_and_oversized_messages) ... ok
+test_rejection_clears_private_state (tests.test_exchange.TestSessionState.test_rejection_clears_private_state) ... ok
+test_replay_old_finish_into_fresh_bob_session (tests.test_exchange.TestSessionState.test_replay_old_finish_into_fresh_bob_session) ... ok
+test_replay_old_response_into_fresh_alice_session (tests.test_exchange.TestSessionState.test_replay_old_response_into_fresh_alice_session) ... ok
+test_replayed_init_gets_new_nonce_and_cannot_complete_with_old_finish (tests.test_exchange.TestSessionState.test_replayed_init_gets_new_nonce_and_cannot_complete_with_old_finish) ... ok
+test_signed_init_with_non_generator_rejected (tests.test_exchange.TestSessionState.test_signed_init_with_non_generator_rejected) ... ok
+test_signed_init_with_out_of_range_A_rejected (tests.test_exchange.TestSessionState.test_signed_init_with_out_of_range_A_rejected) ... ok
+test_wrong_message_order (tests.test_exchange.TestSessionState.test_wrong_message_order) ... ok
+test_22 (tests.test_math.TestFactorization.test_22) ... ok
+test_more_values (tests.test_math.TestFactorization.test_more_values) ... ok
+test_one_returns_empty_set (tests.test_math.TestFactorization.test_one_returns_empty_set) ... ok
+test_rejects_invalid (tests.test_math.TestFactorization.test_rejects_invalid) ... ok
+test_repeated_factors_65536 (tests.test_math.TestFactorization.test_repeated_factors_65536) ... ok
+test_find_generator_matches_brute_force_order (tests.test_math.TestGenerator.test_find_generator_matches_brute_force_order) ... ok
+test_incomplete_factor_set_is_wrong (tests.test_math.TestGenerator.test_incomplete_factor_set_is_wrong) ... ok
+test_out_of_range_candidates_rejected (tests.test_math.TestGenerator.test_out_of_range_candidates_rejected) ... ok
+test_p23_accepts_5_rejects_2 (tests.test_math.TestGenerator.test_p23_accepts_5_rejects_2) ... ok
+test_p23_handout_values (tests.test_math.TestGenerator.test_p23_handout_values) ... ok
+test_p65537_accepts_3 (tests.test_math.TestGenerator.test_p65537_accepts_3) ... ok
+test_eve_fixture (tests.test_math.TestKeyAgreementFixture.test_eve_fixture) ... ok
+test_handout_fixture (tests.test_math.TestKeyAgreementFixture.test_handout_fixture) ... ok
+test_random_keypair_in_range (tests.test_math.TestKeyAgreementFixture.test_random_keypair_in_range) ... ok
+test_exponent_zero (tests.test_math.TestModularExponentiation.test_exponent_zero) ... ok
+test_known_result_from_handout (tests.test_math.TestModularExponentiation.test_known_result_from_handout) ... ok
+test_matches_builtin_pow_reference (tests.test_math.TestModularExponentiation.test_matches_builtin_pow_reference)
+pow(base, exp, mod) is used ONLY here, as an independent reference. ... ok
+test_modulus_one (tests.test_math.TestModularExponentiation.test_modulus_one) ... ok
+test_negative_base (tests.test_math.TestModularExponentiation.test_negative_base) ... ok
+test_rejects_invalid_types (tests.test_math.TestModularExponentiation.test_rejects_invalid_types) ... ok
+test_rejects_negative_exponent (tests.test_math.TestModularExponentiation.test_rejects_negative_exponent) ... ok
+test_rejects_nonpositive_modulus (tests.test_math.TestModularExponentiation.test_rejects_nonpositive_modulus) ... ok
+test_result_in_range (tests.test_math.TestModularExponentiation.test_result_in_range) ... ok
+test_extra_top_level_field (tests.test_message_validation.TestConfirmationSchema.test_extra_top_level_field) ... ok
+test_transcript_strictness (tests.test_message_validation.TestConfirmationSchema.test_transcript_strictness) ... ok
+test_valid_response_and_finish (tests.test_message_validation.TestConfirmationSchema.test_valid_response_and_finish) ... ok
+test_wrong_message_type (tests.test_message_validation.TestConfirmationSchema.test_wrong_message_type) ... ok
+test_deterministic_sorted_compact (tests.test_message_validation.TestEncoding.test_deterministic_sorted_compact) ... ok
+test_envelope_roundtrip (tests.test_message_validation.TestEncoding.test_envelope_roundtrip) ... ok
+test_key_order_does_not_matter (tests.test_message_validation.TestEncoding.test_key_order_does_not_matter) ... ok
+test_identity_labels (tests.test_message_validation.TestInitSchema.test_identity_labels) ... ok
+test_integer_size_bounds (tests.test_message_validation.TestInitSchema.test_integer_size_bounds) ... ok
+test_malformed_nonces (tests.test_message_validation.TestInitSchema.test_malformed_nonces) ... ok
+test_no_string_to_int_coercion (tests.test_message_validation.TestInitSchema.test_no_string_to_int_coercion) ... ok
+test_unexpected_and_missing_fields (tests.test_message_validation.TestInitSchema.test_unexpected_and_missing_fields) ... ok
+test_valid (tests.test_message_validation.TestInitSchema.test_valid) ... ok
+test_wrong_protocol_and_type (tests.test_message_validation.TestInitSchema.test_wrong_protocol_and_type) ... ok
+test_wrong_types (tests.test_message_validation.TestInitSchema.test_wrong_types) ... ok
+test_envelope_shape (tests.test_message_validation.TestStrictParsing.test_envelope_shape) ... ok
+test_rejects_duplicate_keys (tests.test_message_validation.TestStrictParsing.test_rejects_duplicate_keys) ... ok
+test_rejects_floats_and_constants (tests.test_message_validation.TestStrictParsing.test_rejects_floats_and_constants) ... ok
+test_rejects_malformed_json (tests.test_message_validation.TestStrictParsing.test_rejects_malformed_json) ... ok
+test_rejects_non_utf8_and_non_bytes (tests.test_message_validation.TestStrictParsing.test_rejects_non_utf8_and_non_bytes) ... ok
+test_rejects_oversized (tests.test_message_validation.TestStrictParsing.test_rejects_oversized) ... ok
+test_allowed_range_example (tests.test_prime_generation.TestGeneratePrime.test_allowed_range_example) ... ok
+test_boolean_and_noninteger_sizes (tests.test_prime_generation.TestGeneratePrime.test_boolean_and_noninteger_sizes) ... ok
+test_default_is_16_bits (tests.test_prime_generation.TestGeneratePrime.test_default_is_16_bits) ... ok
+test_exact_bit_length_and_oddness_all_sizes (tests.test_prime_generation.TestGeneratePrime.test_exact_bit_length_and_oddness_all_sizes) ... ok
+test_generate_parameters_produces_valid_generator (tests.test_prime_generation.TestGeneratePrime.test_generate_parameters_produces_valid_generator) ... ok
+test_invalid_requested_sizes (tests.test_prime_generation.TestGeneratePrime.test_invalid_requested_sizes) ... ok
+test_timed_wrapper (tests.test_prime_generation.TestGeneratePrime.test_timed_wrapper) ... ok
+test_user_input_parsing (tests.test_prime_generation.TestGeneratePrime.test_user_input_parsing) ... ok
+test_accepts_65537 (tests.test_prime_generation.TestReceivedModulusValidation.test_accepts_65537) ... ok
+test_accepts_generated_prime (tests.test_prime_generation.TestReceivedModulusValidation.test_accepts_generated_prime) ... ok
+test_fixture_path_allows_23_but_still_checks_primality (tests.test_prime_generation.TestReceivedModulusValidation.test_fixture_path_allows_23_but_still_checks_primality) ... ok
+test_library_fixture_values (tests.test_prime_generation.TestReceivedModulusValidation.test_library_fixture_values) ... ok
+test_rejects_composite_32769 (tests.test_prime_generation.TestReceivedModulusValidation.test_rejects_composite_32769) ... ok
+test_rejects_out_of_range_sizes (tests.test_prime_generation.TestReceivedModulusValidation.test_rejects_out_of_range_sizes) ... ok
+test_rejects_wrong_types (tests.test_prime_generation.TestReceivedModulusValidation.test_rejects_wrong_types) ... ok
+
+----------------------------------------------------------------------
+Ran 90 tests in 0.523s
+
+OK

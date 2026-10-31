@@ -1,0 +1,35 @@
+================================================================
+ATTACK 1: EVE vs. UNAUTHENTICATED DIFFIE-HELLMAN (teaching fixture)
+================================================================
+p = 23, g = 5, Alice a = 6, Bob b = 15
+Alice sends A = 8; Bob sends B = 19
+Eve picks e1 = 3: E1 = 5^3 mod 23 = 10
+Eve picks e2 = 7: E2 = 5^7 mod 23 = 17
+Eve sends E1 = 10 to Alice as if from Bob, E2 = 17 to Bob as if from Alice
+  Alice computes: 10^6 mod 23 = 6
+  Eve computes:   8^3 mod 23 = 6
+  Bob computes:   17^15 mod 23 = 15
+  Eve computes:   19^7 mod 23 = 15
+Result: Alice and Bob hold DIFFERENT secrets, and Eve knows BOTH.
+Unauthenticated exchange detected the attack: NO
+
+================================================================
+ATTACK 2: SAME SUBSTITUTION vs. AUTHENTICATED PROTOCOL
+================================================================
+Alice initiation signature: VALID
+Eve modified Bob's public value (B -> 10) and kept Bob's signature.
+Bob response signature: INVALID
+Transcript authenticated: NO
+Exchange aborted.
+Reason: Alice rejected response: signature attributed to 'Bob' is INVALID
+Alice still holds a pending session: NO
+
+================================================================
+ATTACK 3: EVE RE-SIGNS A MODIFIED INIT WITH HER OWN KEY, LABELED 'Alice'
+================================================================
+Eve replaced A with 10 and signed with her own key.
+Bob verifies against Alice's ALREADY-CONFIGURED trusted key.
+Alice initiation signature: INVALID
+Exchange aborted.
+Reason: Bob rejected init: signature attributed to 'Alice' is INVALID
+
