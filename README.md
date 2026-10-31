@@ -4,6 +4,20 @@ A Python simulation of finite-field Diffie-Hellman between Alice and Bob, authen
 
 This is a local simulation. There are no network sockets, no message encryption, and no ECDH implementation.
 
+## Demo
+
+### Successful authenticated exchange
+
+![Successful authenticated Diffie-Hellman exchange](docs/media/demo.gif)
+
+### Eve's man-in-the-middle attack: unauthenticated vs. authenticated
+
+![Eve's attack succeeds against plain DH and is rejected by the signed protocol](docs/media/attack.gif)
+
+### Automated tests
+
+![90 automated tests passing](docs/media/tests.gif)
+
 ## What is implemented by hand vs. by a library
 
 | Component | Source |
@@ -42,6 +56,7 @@ Both are pinned in `requirements.txt`. Python 3.9.2 or newer is required (develo
 | `docs/REPORT.md` | Report and ECDH research comparison |
 | `docs/performance.md` | Timing results for 16, 24, and 32 bits |
 | `docs/sample_output_*.txt` | Sample program output |
+| `docs/media/` | Demo GIFs |
 
 ## Setup (macOS)
 
@@ -105,14 +120,16 @@ Each message is `{"payload": {...}, "signature": "<hex>"}` encoded with `json.du
 
 ## Sample output
 
-Successful exchange (`docs/sample_output_success.txt`):
+Full output is in `docs/sample_output_success.txt` and `docs/sample_output_attack.txt`.
+
+Successful exchange:
 
 ```
 Requested prime size: 16 bits
 Modulus: generated using library prime generator
 Modulus bit length: 16
 Received modulus library validation: PASS
-Generator: validated (g = 3)
+Generator: validated
 Alice initiation signature: VALID
 Bob response signature: VALID
 Alice finish signature: VALID
@@ -121,7 +138,7 @@ Shared-secret equality in local test: PASS
 Explicit key confirmation: NOT IMPLEMENTED
 ```
 
-Attack (`docs/sample_output_attack.txt`):
+Attack:
 
 ```
 Eve modified Bob's public value (B -> 10) and kept Bob's signature.

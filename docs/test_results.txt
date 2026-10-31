@@ -94,6 +94,6 @@ test_rejects_out_of_range_sizes (tests.test_prime_generation.TestReceivedModulus
 test_rejects_wrong_types (tests.test_prime_generation.TestReceivedModulusValidation.test_rejects_wrong_types) ... ok
 
 ----------------------------------------------------------------------
-Ran 90 tests in 0.523s
+Ran 90 tests in 0.457s
 
 OK

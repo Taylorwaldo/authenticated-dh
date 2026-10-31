@@ -3,12 +3,12 @@ SUCCESSFUL AUTHENTICATED DIFFIE-HELLMAN EXCHANGE
 ================================================================
 Requested prime size: 16 bits
 Modulus: generated using library prime generator
-p = 41887
+p = 43457
 Modulus bit length: 16
-Factors of p - 1: {2, 3, 13, 179}
-Prime generation time:   0.000413 s
-Factorization time:      0.000007 s
-Generator search time:   0.000034 s
+Factors of p - 1: {2, 7, 97}
+Prime generation time:   0.000571 s
+Factorization time:      0.000013 s
+Generator search time:   0.000050 s
 Received modulus library validation: PASS
 Generator: validated (g = 3)
 Alice initiation signature: VALID
